@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{% if title %}{{ title }} - {% endif %}Netopya Planet</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    {% if og_image %}
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{ page.url | url }}">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:image" content="{{ og_image }}">
+    <meta property="og:site_name" content="Netopya Planet">
+    <meta property="og:description" content="{{ description or (content | excerpt) }}">
+    {% else %}
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ page.url | url }}">
+    <meta property="og:title" content="Netopyaplanet.com">
+    <meta property="og:image" content="/site_image.png">
+    <meta property="og:site_name" content="Netopya Planet">
+    <meta property="og:description" content="Netopya's Official Blog!">
+    {% endif %}
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.override.css">
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    {% if layout == "post" %}
+    <link rel="stylesheet" href="/css/article.override.css">
+    {% endif %}
+    
+    {% if page_js %}
+    {{ page_js | safe }}
+    {% endif %}
+</head>
+<body>
+    {% include "navbar.njk" %}
+    
+    <main>
+        {{ content | safe }}
+    </main>
+    
+    {% include "footer.njk" %}
+    
+    <!-- Bootstrap 5 JS Bundle (includes Popper) -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- jQuery for legacy carousel functionality -->
+    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html> 

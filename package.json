@@ -1,0 +1,25 @@
+{
+  "name": "netopya-planet",
+  "version": "1.0.0",
+  "description": "Netopya Planet Blog - Static Site Migration from PHP",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "start": "eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blog",
+    "eleventy",
+    "netopya"
+  ],
+  "author": "Netopya",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}

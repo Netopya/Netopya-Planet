@@ -1,0 +1,42 @@
+[
+  {
+    "id": 33,
+    "name": "Testing Breadboard",
+    "description": "The setup we used to test the system",
+    "thumbnail": "/gallery_images/4/thb/thb_IMG_5841.jpg",
+    "large": "/gallery_images/4/lrg/lrg_IMG_5841.jpg",
+    "full": "/gallery_images/4/full/full_IMG_5841.JPG"
+  },
+  {
+    "id": 34,
+    "name": "Breadboard with Annotations",
+    "description": "The Color Sensors, I2C Multiplexer, Arduino, and FTDI breakout are highlighted",
+    "thumbnail": "/gallery_images/4/thb/thb_IMG_5841-Copy.jpg",
+    "large": "/gallery_images/4/lrg/lrg_IMG_5841-Copy.jpg",
+    "full": "/gallery_images/4/full/full_IMG_5841-Copy.JPG"
+  },
+  {
+    "id": 35,
+    "name": "Circuit Diagram",
+    "description": "A circuit diagram of this project created in Fritzing",
+    "thumbnail": "/gallery_images/4/thb/thb_colorsensordia1_bb.jpg",
+    "large": "/gallery_images/4/lrg/lrg_colorsensordia1_bb.jpg",
+    "full": "/gallery_images/4/full/full_colorsensordia1_bb.png"
+  },
+  {
+    "id": 36,
+    "name": "Processing App Screenshot",
+    "description": "An orange ball was placed over the 4th color sensor.",
+    "thumbnail": "/gallery_images/4/thb/thb_screenshot2.jpg",
+    "large": "/gallery_images/4/lrg/lrg_screenshot2.jpg",
+    "full": "/gallery_images/4/full/full_screenshot2.JPG"
+  },
+  {
+    "id": 37,
+    "name": "Code to Comment",
+    "description": "Remember to comment out this line of code from the Adafruit color sensor library cpp file",
+    "thumbnail": "/gallery_images/4/thb/thb_notethis.jpg",
+    "large": "/gallery_images/4/lrg/lrg_notethis.jpg",
+    "full": "/gallery_images/4/full/full_notethis.PNG"
+  }
+]

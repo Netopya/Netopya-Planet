@@ -1,0 +1,73 @@
+---
+layout: base
+title: "Home"
+---
+
+<div id="smalltopnavback"></div>
+
+<div class="container marketing">
+    <!-- Welcome Section -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="bg-light p-5 rounded-3 mb-4">
+                <h1 class="display-4">Welcome to Netopya Planet!</h1>
+                <p class="lead">Engineering, technology, and science discoveries from a university student in Canada.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Posts -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>Latest Articles</h2>
+            {% set postslist = collections.posts | reverse %}
+            {% for post in postslist %}
+                <article class="blog-post-preview">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3><a href="{{ post.url }}" class="text-decoration-none">{{ post.data.title }}</a></h3>
+                            <p class="article-meta">
+                                <small><i>By {{ post.data.author or "Netopya" }} on {{ post.data.date | dateFormat }}</i></small>
+                                {% if post.data.tag %}<span class="badge bg-secondary">{{ post.data.tag }}</span>{% endif %}
+                            </p>
+                            
+                            {% if post.data.overfold_content %}
+                                <div class="article-preview">
+                                    {{ post.data.overfold_content | safe }}
+                                </div>
+                            {% else %}
+                                <div class="article-preview">
+                                    {{ post.templateContent | excerpt(200) }}
+                                </div>
+                            {% endif %}
+                            
+                            <p><a href="{{ post.url }}" class="btn btn-primary">Read More →</a></p>
+                            <hr>
+                        </div>
+                    </div>
+                </article>
+            {% endfor %}
+        </div>
+    </div>
+    
+    <!-- Categories Section -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h3>Browse by Category</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4><a href="/tutorials/" class="text-decoration-none">Tutorials</a></h4>
+                    <p>Step-by-step guides and how-to articles.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4><a href="/projects/" class="text-decoration-none">Projects</a></h4>
+                    <p>Personal projects and build logs.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4><a href="/tools/" class="text-decoration-none">Tools</a></h4>
+                    <p>Software tools and utilities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

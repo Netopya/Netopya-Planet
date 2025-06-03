@@ -1,0 +1,74 @@
+[
+  {
+    "id": 38,
+    "name": "Setup Overview",
+    "description": "An overview of the entire setup with peripherals and computing parts ",
+    "thumbnail": "/gallery_images/5/thb/thb_IMG_6584.JPG",
+    "large": "/gallery_images/5/lrg/lrg_IMG_6584.JPG",
+    "full": "/gallery_images/5/full/full_IMG_6584.JPG"
+  },
+  {
+    "id": 39,
+    "name": "Electronic Parts with Anotations",
+    "description": "The main parts of the setup with a short description",
+    "thumbnail": "/gallery_images/5/thb/thb_IMG_6599_anot.JPG",
+    "large": "/gallery_images/5/lrg/lrg_IMG_6599_anot.JPG",
+    "full": "/gallery_images/5/full/full_IMG_6599_anot.JPG"
+  },
+  {
+    "id": 40,
+    "name": "Closeup view",
+    "description": "Closeup of the boards connected with the display",
+    "thumbnail": "/gallery_images/5/thb/thb_IMG_6591.JPG",
+    "large": "/gallery_images/5/lrg/lrg_IMG_6591.JPG",
+    "full": "/gallery_images/5/full/full_IMG_6591.JPG"
+  },
+  {
+    "id": 41,
+    "name": "LCD Display",
+    "description": "Closeup view of the LCD display",
+    "thumbnail": "/gallery_images/5/thb/thb_IMG_6590.JPG",
+    "large": "/gallery_images/5/lrg/lrg_IMG_6590.JPG",
+    "full": "/gallery_images/5/full/full_IMG_6590.JPG"
+  },
+  {
+    "id": 42,
+    "name": "Boards",
+    "description": "Closeup view of the LCD Controller boards with the Raspberry Pi",
+    "thumbnail": "/gallery_images/5/thb/thb_IMG_6595.JPG",
+    "large": "/gallery_images/5/lrg/lrg_IMG_6595.JPG",
+    "full": "/gallery_images/5/full/full_IMG_6595.JPG"
+  },
+  {
+    "id": 43,
+    "name": "Board Top-down View",
+    "description": "Top-down view of the LCD Controller boards with the Raspberry Pi",
+    "thumbnail": "/gallery_images/5/thb/thb_IMG_6599.JPG",
+    "large": "/gallery_images/5/lrg/lrg_IMG_6599.JPG",
+    "full": "/gallery_images/5/full/full_IMG_6599.JPG"
+  },
+  {
+    "id": 44,
+    "name": "Display Back",
+    "description": "Back view of the display with the LCD Controller board power supply and the original laptop frame",
+    "thumbnail": "/gallery_images/5/thb/thb_IMG_6601.JPG",
+    "large": "/gallery_images/5/lrg/lrg_IMG_6601.JPG",
+    "full": "/gallery_images/5/full/full_IMG_6601.JPG"
+  },
+  {
+    "id": 45,
+    "name": "Back Top View",
+    "description": "View of the display from the back with peripherals and the Raspberry Pi peeking on the right.",
+    "thumbnail": "/gallery_images/5/thb/thb_IMG_6605.JPG",
+    "large": "/gallery_images/5/lrg/lrg_IMG_6605.JPG",
+    "full": "/gallery_images/5/full/full_IMG_6605.JPG"
+  },
+  {
+    "id": 46,
+    "name": "Testing the LCD Controller",
+    "description": "I did a quick test when I first got the LCD Controller by hooking it up to a another laptop to act as an external display",
+    "thumbnail": "/gallery_images/5/thb/thb_IMG_6554.JPG",
+    "large": "/gallery_images/5/lrg/lrg_IMG_6554.JPG",
+    "full": "/gallery_images/5/full/full_IMG_6554.JPG"
+  }
+]

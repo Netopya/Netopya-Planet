@@ -1,0 +1,59 @@
+---
+layout: base
+title: "Tools"
+permalink: /tools/
+---
+
+<div id="smalltopnavback"></div>
+
+<div class="container marketing">
+    <div class="row">
+        <div class="col-lg-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Tools</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>Tools</h1>
+            <p class="lead">Software tools, utilities, and applications I've created.</p>
+            
+            {% set postslist = collections.tools | reverse %}
+            {% if postslist.length > 0 %}
+                {% for post in postslist %}
+                    <article class="blog-post-preview">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h3><a href="{{ post.url }}" class="text-decoration-none">{{ post.data.title }}</a></h3>
+                                <p class="article-meta">
+                                    <small><i>By {{ post.data.author or "Netopya" }} on {{ post.data.date | dateFormat }}</i></small>
+                                    {% if post.data.tag %}<span class="badge bg-secondary">{{ post.data.tag }}</span>{% endif %}
+                                </p>
+                                
+                                {% if post.data.overfold_content %}
+                                    <div class="article-preview">
+                                        {{ post.data.overfold_content | safe }}
+                                    </div>
+                                {% else %}
+                                    <div class="article-preview">
+                                        {{ post.templateContent | excerpt(200) }}
+                                    </div>
+                                {% endif %}
+                                
+                                <p><a href="{{ post.url }}" class="btn btn-primary">View Tool →</a></p>
+                                <hr>
+                            </div>
+                        </div>
+                    </article>
+                {% endfor %}
+            {% else %}
+                <p>No tools available yet. Check back soon!</p>
+            {% endif %}
+        </div>
+    </div>
+</div> 

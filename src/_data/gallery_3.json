@@ -1,0 +1,50 @@
+[
+  {
+    "id": 27,
+    "name": "Real Time Clock",
+    "description": "Close up of the half soldered RTC PCB",
+    "thumbnail": "/gallery_images/3/thb/thb_IMG_5621.JPG",
+    "large": "/gallery_images/3/lrg/lrg_IMG_5621.JPG",
+    "full": "/gallery_images/3/full/full_IMG_5621.JPG"
+  },
+  {
+    "id": 28,
+    "name": "Project Box",
+    "description": "Cutting openings in the project box for visible components",
+    "thumbnail": "/gallery_images/3/thb/thb_IMG_5624.JPG",
+    "large": "/gallery_images/3/lrg/lrg_IMG_5624.JPG",
+    "full": "/gallery_images/3/full/full_IMG_5624.JPG"
+  },
+  {
+    "id": 29,
+    "name": "Segmented Display",
+    "description": "The breadboard holding the segmented LED display along with controlling shift registers",
+    "thumbnail": "/gallery_images/3/thb/thb_IMG_5627.JPG",
+    "large": "/gallery_images/3/lrg/lrg_IMG_5627.JPG",
+    "full": "/gallery_images/3/full/full_IMG_5627.JPG"
+  },
+  {
+    "id": 30,
+    "name": "Inside the box",
+    "description": "What a mess of wires!",
+    "thumbnail": "/gallery_images/3/thb/thb_IMG_5628.JPG",
+    "large": "/gallery_images/3/lrg/lrg_IMG_5628.JPG",
+    "full": "/gallery_images/3/full/full_IMG_5628.JPG"
+  },
+  {
+    "id": 31,
+    "name": "Circuit Diagram",
+    "description": "Here is a complete circuit diagram of the project",
+    "thumbnail": "/gallery_images/3/thb/thb_Sketch",
+    "large": "/gallery_images/3/lrg/lrg_Sketch",
+    "full": "/gallery_images/3/full/full_Sketch"
+  },
+  {
+    "id": 32,
+    "name": "Final Device",
+    "description": "The AEMD strikes a pose in its final form",
+    "thumbnail": "/gallery_images/3/thb/thb_IMG_5781.JPG",
+    "large": "/gallery_images/3/lrg/lrg_IMG_5781.JPG",
+    "full": "/gallery_images/3/full/full_IMG_5781.JPG"
+  }
+]

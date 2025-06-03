@@ -1,0 +1,54 @@
+---
+layout: base
+---
+
+<div id="smalltopnavback"></div>
+
+<div class="container marketing">
+    <div class="row">
+        <div class="col-lg-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ title }}</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+            <article class="blog_post">
+                <header>
+                    <h1>{{ title }}</h1>
+                    <p class="article-meta">
+                        <small><i>By {{ author or "Netopya" }} on {{ date | dateFormat }}</i></small>
+                        {% if tag %}<span class="badge bg-secondary">{{ tag }}</span>{% endif %}
+                    </p>
+                </header>
+                
+                {% if overfold_content %}
+                <div class="article-intro">
+                    {{ overfold_content | safe }}
+                </div>
+                {% endif %}
+
+                {% if galleryImages and galleryImages.length > 0 %}
+                <section class="article-gallery mt-4">
+                    <h3>Project Gallery</h3>
+                    {% include "image-carousel.njk" %}
+                </section>
+                {% endif %}
+                
+                <div class="article-content">
+                    {{ content | safe }}
+                </div>
+
+                <footer class="article-footer">
+                    <hr>
+                    <p><a href="/">&larr; Back to Home</a></p>
+                </footer>
+            </article>
+        </div>
+    </div>
+</div> 

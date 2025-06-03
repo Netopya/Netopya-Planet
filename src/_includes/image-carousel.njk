@@ -1,0 +1,78 @@
+{% if galleryImages and galleryImages.length > 0 %}
+<div class="row">
+  <div class="col-12">
+    <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        {% for image in galleryImages %}
+        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="{{ loop.index0 }}" {% if loop.first %}class="active" aria-current="true"{% endif %} aria-label="Slide {{ loop.index }}"></button>
+        {% endfor %}
+      </div>
+      
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        {% for image in galleryImages %}
+        <div class="carousel-item {% if loop.first %}active{% endif %}">
+          <div class="text-center">
+            <a href="{{ image.full }}" target="_blank">
+              <img src="{{ image.large }}" class="d-block img-fluid mx-auto" alt="{{ image.name }}" style="max-height: 400px;">
+            </a>
+          </div>
+          {% if image.name or image.description %}
+          <div class="carousel-caption d-none d-md-block">
+            {% if image.name %}
+            <h5>{{ image.name }}</h5>
+            {% endif %}
+            {% if image.description %}
+            <p>{{ image.description | truncate(100) }}</p>
+            {% endif %}
+          </div>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+      
+      <!-- Left and right controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+    <!-- Image grid thumbnail view -->
+    <div class="row mt-3">
+      {% for image in galleryImages %}
+      <div class="col-md-2 col-sm-3 col-4 mb-2">
+        <button type="button" class="btn p-0 border-0" data-bs-target="#imageCarousel" data-bs-slide-to="{{ loop.index0 }}">
+          <img src="{{ image.thumbnail }}" class="img-fluid rounded" alt="{{ image.name }}" style="height: 60px; object-fit: cover; width: 100%;">
+        </button>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script>
+// Initialize carousel with Bootstrap 5 API
+document.addEventListener('DOMContentLoaded', function() {
+  const carousel = new bootstrap.Carousel(document.getElementById('imageCarousel'), {
+    interval: 5000,
+    pause: 'hover',
+    wrap: true
+  });
+  
+  // Handle thumbnail clicks
+  document.querySelectorAll('[data-bs-slide-to]').forEach(function(element) {
+    element.addEventListener('click', function(e) {
+      e.preventDefault();
+      const slideIndex = parseInt(this.getAttribute('data-bs-slide-to'));
+      carousel.to(slideIndex);
+    });
+  });
+});
+</script>
+{% endif %} 

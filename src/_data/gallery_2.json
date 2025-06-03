@@ -1,0 +1,146 @@
+[
+  {
+    "id": 9,
+    "name": "CADRender",
+    "description": "Rendering of the final assembly of my charging station in Inventor",
+    "thumbnail": "/gallery_images/2/thb/thb_Charger2_2.png",
+    "large": "/gallery_images/2/lrg/lrg_Charger2_2.png",
+    "full": "/gallery_images/2/full/full_Charger2_2.png"
+  },
+  {
+    "id": 10,
+    "name": "Exploded View",
+    "description": "An exploded view of the assembly created in Inventor",
+    "thumbnail": "/gallery_images/2/thb/thb_Presentation1_2.png",
+    "large": "/gallery_images/2/lrg/lrg_Presentation1_2.png",
+    "full": "/gallery_images/2/full/full_Presentation1_2.png"
+  },
+  {
+    "id": 11,
+    "name": "Sketching",
+    "description": "Transferring dimensions from the sketches to the pieces of wood ",
+    "thumbnail": "/gallery_images/2/thb/thb_IMG_5649.JPG",
+    "large": "/gallery_images/2/lrg/lrg_IMG_5649.JPG",
+    "full": "/gallery_images/2/full/full_IMG_5649.JPG"
+  },
+  {
+    "id": 12,
+    "name": "Cutting the wood",
+    "description": "Look at the saw go!",
+    "thumbnail": "/gallery_images/2/thb/thb_IMG_5652.JPG",
+    "large": "/gallery_images/2/lrg/lrg_IMG_5652.JPG",
+    "full": "/gallery_images/2/full/full_IMG_5652.JPG"
+  },
+  {
+    "id": 13,
+    "name": "Final Cut",
+    "description": "An interesting shot. One last jigsaw cut between the two drill holes to finish the top piece.",
+    "thumbnail": "/gallery_images/2/thb/thb_IMG_5653.JPG",
+    "large": "/gallery_images/2/lrg/lrg_IMG_5653.JPG",
+    "full": "/gallery_images/2/full/full_IMG_5653.JPG"
+  },
+  {
+    "id": 14,
+    "name": "Sanding",
+    "description": "Sanding the pieces with the palm sander ",
+    "thumbnail": "/gallery_images/2/thb/thb_IMG_5655.JPG",
+    "large": "/gallery_images/2/lrg/lrg_IMG_5655.JPG",
+    "full": "/gallery_images/2/full/full_IMG_5655.JPG"
+  },
+  {
+    "id": 15,
+    "name": "Pieces",
+    "description": "All the pieces cut and sanded",
+    "thumbnail": "/gallery_images/2/thb/thb_IMG_5657.JPG",
+    "large": "/gallery_images/2/lrg/lrg_IMG_5657.JPG",
+    "full": "/gallery_images/2/full/full_IMG_5657.JPG"
+  },
+  {
+    "id": 16,
+    "name": "First Assembly",
+    "description": "The bottom part of the charging station assembled.",
+    "thumbnail": "/gallery_images/2/thb/thb_IMG_5661.JPG",
+    "large": "/gallery_images/2/lrg/lrg_IMG_5661.JPG",
+    "full": "/gallery_images/2/full/full_IMG_5661.JPG"
+  },
+  {
+    "id": 17,
+    "name": "Plastic Wood",
+    "description": "First application of plastic wood",
+    "thumbnail": "/gallery_images/2/thb/thb_IMG_5662.JPG",
+    "large": "/gallery_images/2/lrg/lrg_IMG_5662.JPG",
+    "full": "/gallery_images/2/full/full_IMG_5662.JPG"
+  },
+  {
+    "id": 18,
+    "name": "Finishing",
+    "description": "Close-up after sanding the last application of plastic wood",
+    "thumbnail": "/gallery_images/2/thb/thb_IMG_5690.JPG",
+    "large": "/gallery_images/2/lrg/lrg_IMG_5690.JPG",
+    "full": "/gallery_images/2/full/full_IMG_5690.JPG"
+  },
+  {
+    "id": 19,
+    "name": "Staining",
+    "description": "The pieces stained on exterior surfaces",
+    "thumbnail": "/gallery_images/2/thb/thb_IMG_5710.JPG",
+    "large": "/gallery_images/2/lrg/lrg_IMG_5710.JPG",
+    "full": "/gallery_images/2/full/full_IMG_5710.JPG"
+  },
+  {
+    "id": 20,
+    "name": "Tray Surface",
+    "description": "The fancy fabric glued to the top of the tray",
+    "thumbnail": "/gallery_images/2/thb/thb_IMG_5713.JPG",
+    "large": "/gallery_images/2/lrg/lrg_IMG_5713.JPG",
+    "full": "/gallery_images/2/full/full_IMG_5713.JPG"
+  },
+  {
+    "id": 21,
+    "name": "Gluing",
+    "description": "Pressing the pieces together with tons of books!",
+    "thumbnail": "/gallery_images/2/thb/thb_IMG_5716.JPG",
+    "large": "/gallery_images/2/lrg/lrg_IMG_5716.JPG",
+    "full": "/gallery_images/2/full/full_IMG_5716.JPG"
+  },
+  {
+    "id": 22,
+    "name": "Assembly Done",
+    "description": "All that\\\\'s left is adding the charging accessories",
+    "thumbnail": "/gallery_images/2/thb/thb_IMG_5719.JPG",
+    "large": "/gallery_images/2/lrg/lrg_IMG_5719.JPG",
+    "full": "/gallery_images/2/full/full_IMG_5719.JPG"
+  },
+  {
+    "id": 23,
+    "name": "Mounting screws",
+    "description": "Screws to attach the power bar",
+    "thumbnail": "/gallery_images/2/thb/thb_IMG_5721.JPG",
+    "large": "/gallery_images/2/lrg/lrg_IMG_5721.JPG",
+    "full": "/gallery_images/2/full/full_IMG_5721.JPG"
+  },
+  {
+    "id": 24,
+    "name": "Wiring",
+    "description": "All the wires neatly wrapped and tucked away ",
+    "thumbnail": "/gallery_images/2/thb/thb_IMG_5741.JPG",
+    "large": "/gallery_images/2/lrg/lrg_IMG_5741.JPG",
+    "full": "/gallery_images/2/full/full_IMG_5741.JPG"
+  },
+  {
+    "id": 25,
+    "name": "Devices charging!",
+    "description": "Final shot with devices charging up",
+    "thumbnail": "/gallery_images/2/thb/thb_IMG_5757.JPG",
+    "large": "/gallery_images/2/lrg/lrg_IMG_5757.JPG",
+    "full": "/gallery_images/2/full/full_IMG_5757.JPG"
+  },
+  {
+    "id": 26,
+    "name": "Final Setup",
+    "description": "Now for an awesome place for the station on my desk",
+    "thumbnail": "/gallery_images/2/thb/thb_IMG_5738.JPG",
+    "large": "/gallery_images/2/lrg/lrg_IMG_5738.JPG",
+    "full": "/gallery_images/2/full/full_IMG_5738.JPG"
+  }
+]

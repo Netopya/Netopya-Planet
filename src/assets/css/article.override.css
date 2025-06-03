@@ -1,0 +1,51 @@
+.carousel-indicators {
+	position:relative;
+	bottom:0px;
+}
+
+.carousel-indicators li {
+	border:1px solid #fff;
+	
+}
+
+.carousel-indicators .active {
+	background-color: #fff;
+}
+
+.carousel-caption {
+	bottom:0px;
+	padding-bottom:0px;
+}
+
+.carousel-caption p {
+	text-indent:0px;
+	padding-left:30px;
+	padding-right:30px;
+	margin:0px;
+	padding-top:10px;
+	padding-bottom:10px;
+	text-shadow: 0px 0px 10px #000;
+	
+    background: -webkit-radial-gradient(rgba(0,0,0,1) 20%, rgba(0,0,0,0.0001) 60%); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(rgba(0,0,0,1) 20%, rgba(0,0,0,0.0001) 60%); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(rgba(0,0,0,1) 20%, rgba(0,0,0,0.0001) 60%); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(rgba(0,0,0,1) 20%, rgba(0,0,0,0.0001) 60%); /* Standard syntax (must be last) */
+}
+
+.carousel-caption a:link    {color:#fff; text-decoration:none}
+.carousel-caption a:visited {color:#fff; text-decoration:none}
+.carousel-caption a:hover   {color:#fff; text-decoration:none}
+.carousel-caption a:active  {color:#fff; text-decoration:none}
+
+.carousel-inner img {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+code {
+  text-align: left;
+}
+  
+.well {
+	margin-top: 0px;
+}
