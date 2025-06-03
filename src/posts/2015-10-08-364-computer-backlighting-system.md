@@ -51,6 +51,18 @@ overfold_content: |
 <p><a href="https://github.com/Netopya/NetopyaAmbientLight">GitHub <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></p>
 <h2>Videos</h2>
 <p>A video of the system displaying a Windows Media Player music visualizer</p>
-<div class="row"><div class="col-sm-8 col-sm-offset-2 col-xs-12 centered_image"><div class="embed-responsive embed-responsive-4by3"><iframe width="420" height="315" src="https://www.youtube.com/embed/z9RqdH6WB20" frameborder="0" allowfullscreen></iframe></div></div></div>
+<div class="row justify-content-center mb-4">
+  <div class="col-lg-8 col-md-10 col-12">
+    <div class="ratio ratio-4x3">
+      <iframe src="https://www.youtube.com/embed/z9RqdH6WB20" title="Computer Backlighting with Music Visualizer" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
 <p>An early video testing the TLC5940s showing a rainbow pattern on the RGB LEDs</p>
-<div class="row"><div class="col-sm-8 col-sm-offset-2 col-xs-12 centered_image"><div class="embed-responsive embed-responsive-4by3"><iframe width="420" height="315" src="https://www.youtube.com/embed/FCKEEMjqrG0" frameborder="0" allowfullscreen></iframe></div></div></div>
+<div class="row justify-content-center mb-4">
+  <div class="col-lg-8 col-md-10 col-12">
+    <div class="ratio ratio-4x3">
+      <iframe src="https://www.youtube.com/embed/FCKEEMjqrG0" title="TLC5940 Rainbow Pattern Test" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>

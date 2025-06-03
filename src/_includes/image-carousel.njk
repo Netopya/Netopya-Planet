@@ -1,7 +1,36 @@
 {% if galleryImages and galleryImages.length > 0 %}
 <div class="row">
   <div class="col-12">
-    <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div id="imageCarousel" class="carousel slide position-relative" data-bs-ride="carousel" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 0.5rem; padding: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+      
+      <!-- Pause/Play Button -->
+      <button id="carouselToggle" type="button" class="btn btn-light btn-sm position-absolute" style="top: 1rem; right: 1rem; z-index: 10; opacity: 0.8; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;" title="Pause slideshow">
+        <span id="toggleIcon">⏸️</span>
+      </button>
+      
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" style="border-radius: 0.375rem; overflow: hidden;">
+        {% for image in galleryImages %}
+        <div class="carousel-item {% if loop.first %}active{% endif %}">
+          <div class="text-center">
+            <a href="{{ image.full }}" target="_blank">
+              <img src="{{ image.large }}" class="d-block img-fluid mx-auto" alt="{{ image.name }}" style="max-height: 400px; border-radius: 0.375rem;">
+            </a>
+          </div>
+          {% if image.name or image.description %}
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-2" style="bottom: 1rem; left: 50%; transform: translateX(-50%); width: auto; max-width: 80%;">
+            {% if image.name %}
+            <h5 class="mb-1">{{ image.name }}</h5>
+            {% endif %}
+            {% if image.description %}
+            <p class="mb-0 small">{{ image.description | truncate(100) }}</p>
+            {% endif %}
+          </div>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+
       <!-- Indicators -->
       <div class="carousel-indicators">
         {% for image in galleryImages %}
@@ -9,70 +38,97 @@
         {% endfor %}
       </div>
       
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        {% for image in galleryImages %}
-        <div class="carousel-item {% if loop.first %}active{% endif %}">
-          <div class="text-center">
-            <a href="{{ image.full }}" target="_blank">
-              <img src="{{ image.large }}" class="d-block img-fluid mx-auto" alt="{{ image.name }}" style="max-height: 400px;">
-            </a>
-          </div>
-          {% if image.name or image.description %}
-          <div class="carousel-caption d-none d-md-block">
-            {% if image.name %}
-            <h5>{{ image.name }}</h5>
-            {% endif %}
-            {% if image.description %}
-            <p>{{ image.description | truncate(100) }}</p>
-            {% endif %}
-          </div>
-          {% endif %}
-        </div>
-        {% endfor %}
-      </div>
-      
       <!-- Left and right controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev" style="opacity: 0.8;">
+        <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next" style="opacity: 0.8;">
+        <span class="carousel-control-next-icon" aria-hidden="true" style="filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
-    
-    <!-- Image grid thumbnail view -->
-    <div class="row mt-3">
-      {% for image in galleryImages %}
-      <div class="col-md-2 col-sm-3 col-4 mb-2">
-        <button type="button" class="btn p-0 border-0" data-bs-target="#imageCarousel" data-bs-slide-to="{{ loop.index0 }}">
-          <img src="{{ image.thumbnail }}" class="img-fluid rounded" alt="{{ image.name }}" style="height: 60px; object-fit: cover; width: 100%;">
-        </button>
-      </div>
-      {% endfor %}
     </div>
   </div>
 </div>
 
 <script>
 // Initialize carousel with Bootstrap 5 API
-document.addEventListener('DOMContentLoaded', function() {
-  const carousel = new bootstrap.Carousel(document.getElementById('imageCarousel'), {
-    interval: 5000,
-    pause: 'hover',
-    wrap: true
+function initializeCarousel() {
+  const carouselElement = document.getElementById('imageCarousel');
+  const toggleButton = document.getElementById('carouselToggle');
+  const toggleIcon = document.getElementById('toggleIcon');
+  
+  if (!carouselElement || !toggleButton || !toggleIcon) {
+    console.warn('Carousel elements not found');
+    return;
+  }
+  
+  // Check if Bootstrap is available
+  if (typeof bootstrap === 'undefined') {
+    console.warn('Bootstrap not loaded yet, retrying...');
+    setTimeout(initializeCarousel, 100);
+    return;
+  }
+  
+  // Initialize carousel - try to get existing instance first
+  let carousel;
+  try {
+    carousel = bootstrap.Carousel.getOrCreateInstance(carouselElement, {
+      interval: 5000,
+      wrap: true,
+      pause: false
+    });
+  } catch (error) {
+    console.error('Error initializing carousel:', error);
+    return;
+  }
+  
+  let isPaused = false;  // Track if manually paused by user
+  
+  // Listen for carousel slide events to maintain paused state
+  carouselElement.addEventListener('slid.bs.carousel', function() {
+    // If user had manually paused, keep it paused after manual navigation
+    if (isPaused) {
+      setTimeout(function() {
+        carousel.pause();
+      }, 10); // Small delay to ensure the slide transition is complete
+    }
   });
   
-  // Handle thumbnail clicks
-  document.querySelectorAll('[data-bs-slide-to]').forEach(function(element) {
-    element.addEventListener('click', function(e) {
-      e.preventDefault();
-      const slideIndex = parseInt(this.getAttribute('data-bs-slide-to'));
-      carousel.to(slideIndex);
-    });
+  // Pause/Play toggle functionality
+  toggleButton.addEventListener('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    try {
+      if (isPaused) {
+        // Resume the carousel
+        carousel.cycle();
+        toggleIcon.textContent = '⏸️';
+        toggleButton.title = 'Pause slideshow';
+        isPaused = false;
+        console.log('Carousel resumed');
+      } else {
+        // Pause the carousel
+        carousel.pause();
+        toggleIcon.textContent = '▶️';
+        toggleButton.title = 'Resume slideshow';
+        isPaused = true;
+        console.log('Carousel paused');
+      }
+    } catch (error) {
+      console.error('Error toggling carousel:', error);
+    }
   });
-});
+  
+  console.log('Carousel initialized successfully');
+}
+
+// Wait for DOM and then initialize
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initializeCarousel);
+} else {
+  initializeCarousel();
+}
 </script>
 {% endif %} 

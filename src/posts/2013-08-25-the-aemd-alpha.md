@@ -9,7 +9,14 @@ og_image: http://www.netopyaplanet.com/gallery_images/3/full/full_IMG_5781.JPG
 description: Here's my latest school project that I worked on with some friends, the Arduino Entertainment Multimedia Device. It's a completely portable Arduino powered LED matrix with a bunch of bells and whistles allowing it to live up to its name. Checkout my video above or continue on for more information and a gallery of shots.
 gallery_id: 3
 overfold_content: |
-  <div class="row"><div class="col-lg-6 col-lg-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 centered_image"><div class="embed-responsive embed-responsive-4by3"><iframe class="embed-responsive-item" width="480" height="360" src="//www.youtube.com/embed/at5guVKc1LE" frameborder="0" allowfullscreen></iframe></div></div></div><p>Here's my latest school project that I worked on with some friends, the Arduino Entertainment Multimedia Device. It's a completely portable Arduino powered LED matrix with a bunch of bells and whistles allowing it to live up to its name. Checkout my video above or continue on for more information and a gallery of shots.</p>
+  <div class="row justify-content-center mb-4">
+    <div class="col-lg-6 col-md-10 col-12">
+      <div class="ratio ratio-4x3">
+        <iframe src="https://www.youtube.com/embed/at5guVKc1LE" title="AEMD Alpha Demo Video" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <p>Here's my latest school project that I worked on with some friends, the Arduino Entertainment Multimedia Device. It's a completely portable Arduino powered LED matrix with a bunch of bells and whistles allowing it to live up to its name. Checkout my video above or continue on for more information and a gallery of shots.</p>
 ---
 
 <p>Here are the AEMD's components:

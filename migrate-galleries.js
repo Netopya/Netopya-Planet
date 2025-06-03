@@ -204,14 +204,4 @@ Object.keys(galleries).forEach(galleryId => {
   console.log(`✓ Created ${filename} with ${galleryImages.length} images`);
 });
 
-// Create a master galleries index
-const allGalleries = Object.keys(galleries).map(id => ({
-  id: parseInt(id),
-  count: galleries[id].length,
-  images: galleries[id]
-}));
-
-fs.writeFileSync(path.join(dataDir, 'galleries.json'), JSON.stringify(allGalleries, null, 2));
-console.log(`✓ Created galleries.json with ${allGalleries.length} galleries`);
-
 console.log('\nGallery migration complete!'); 

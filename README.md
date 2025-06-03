@@ -12,6 +12,7 @@ The blog has been successfully migrated from a PHP-based dynamic site to a stati
 - **Static assets** organized in the src directory following Eleventy best practices
 - **Image galleries** with carousels for posts that have associated photos
 - **Bootstrap 5** managed as npm dependency for better maintainability
+- **Zero jQuery dependency** - Pure vanilla JavaScript with Bootstrap 5
 
 ## Gallery Features
 
@@ -29,6 +30,7 @@ Each gallery includes:
 - **Thumbnail grid** for quick navigation
 - **Image descriptions** with context about each photo
 - **Responsive design** that works on all devices
+- **Modern vanilla JavaScript** - No jQuery dependency
 
 ## Project Structure
 
@@ -52,7 +54,7 @@ src/
 │   │   ├── gallery_images/  # Gallery images with thumbnails
 │   │   └── site/           # General site images
 │   ├── css/           # Stylesheets (from original site)
-│   └── js/            # JavaScript files
+│   └── js/            # JavaScript files (jQuery-free)
 ├── index.njk          # Homepage
 ├── tutorials.njk      # Tutorials category page
 ├── projects.njk       # Projects category page
@@ -65,6 +67,7 @@ src/
 - **Static site generation** with Eleventy
 - **Responsive design** using Bootstrap 5
 - **Modern npm-based dependency management** - Bootstrap 5 included as dependency
+- **jQuery-free implementation** - Pure vanilla JavaScript and Bootstrap 5 components
 - **Category-based organization** (Tutorials, Projects, Tools)
 - **Article excerpts** on listing pages
 - **Date formatting** and metadata
@@ -109,6 +112,7 @@ The built site will be in the `_site` directory.
 - **Eleventy** - Static site generator
 - **Nunjucks** - Template engine
 - **Bootstrap 5** - CSS framework (managed via npm)
+- **Vanilla JavaScript** - Modern ES6+ without jQuery dependency
 - **Node.js** - Build tooling
 
 ## Upgrade Notes
@@ -118,7 +122,9 @@ The site has been upgraded from Bootstrap 3 to Bootstrap 5, with the following i
 - Modern component structure (navbar, breadcrumbs, badges)
 - Improved carousel with better accessibility
 - npm-based dependency management instead of static assets
-- Modern JavaScript without jQuery dependency for Bootstrap components
+- **Complete jQuery removal** - All functionality converted to vanilla JavaScript
+- Modern JavaScript with Bootstrap 5's native API
+- Reduced bundle size and improved performance
 
 ## Original Content
 

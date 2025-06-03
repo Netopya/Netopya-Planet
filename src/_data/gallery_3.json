@@ -35,9 +35,9 @@
     "id": 31,
     "name": "Circuit Diagram",
     "description": "Here is a complete circuit diagram of the project",
-    "thumbnail": "/gallery_images/3/thb/thb_Sketch",
-    "large": "/gallery_images/3/lrg/lrg_Sketch",
-    "full": "/gallery_images/3/full/full_Sketch"
+    "thumbnail": "/gallery_images/3/thb/thb_Sketch.png",
+    "large": "/gallery_images/3/lrg/lrg_Sketch.png",
+    "full": "/gallery_images/3/full/full_Sketch.png"
   },
   {
     "id": 32,

@@ -53,9 +53,13 @@ overfold_content: |
 </figure>
 <h3>Conclusion</h3>
 <p>This project was one component that was used on robot for a competition I participated in called the Engineering Games. This part of the robot was used to quickly sort the ping pong balls required for the challenge. A video showcasing our team and our robot for the competition can be see below. Note at timestamp <a href="https://www.youtube.com/watch?v=_erLsbOwTc4&list=UUK0Z87bs6PvbSnr4TRXAHFw#t=83">1:23</a> where the sorting mechanism is shown in action.</p>
-<div class="row"><div class="col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 centered_image"><div class="embed-responsive embed-responsive-16by9">
-<iframe class="embed-responsive-item" width="533" height="400" src="//www.youtube.com/embed/_erLsbOwTc4" frameborder="0" allowfullscreen></iframe>
-</div></div></div>
+<div class="row justify-content-center mb-4">
+  <div class="col-lg-8 col-md-10 col-12">
+    <div class="ratio ratio-4x3">
+      <iframe src="https://www.youtube.com/embed/_erLsbOwTc4" title="Engineering Games Robot Demo" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
 <p>In conclusion, I hope that sharing this project with you helped you to learn how to use multiple color sensors with an Arduino. Even if multiple I2C sensors have the address, it is very simple to wire them together though an I2C multiplexer and communicate to the multiplexer with 3 lines of code. If you have any questions, feel free to email me. As always, code is below. Enjoy!</p>
 <p><br/><a href="https://github.com/Netopya/Arduino-I2C-Multi-Color-Sensors">Github repo</a><br/>
 <a href="article_code/6/colorviewgood1.zip">Arduino code</a><br/>
