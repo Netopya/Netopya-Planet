@@ -1,9 +1,9 @@
 ---
 title: Improving JavaScript Code Quality
-date: 2016-08-28T01:45:34.000Z
+date: 2016-08-27T21:14:22.000Z
 author: Netopya
 category: tutorials
-tag: TUT
+tag: Tutorial
 layout: post
 og_image: http://netopyaplanet.com/article_images/13/ori_Capture_sq1.png
 description: Learn from the common coding quality mistakes we made in our software engineering project as pointed out by SonarQube.

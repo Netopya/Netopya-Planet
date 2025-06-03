@@ -3,7 +3,7 @@ title: The AEMD Alpha
 date: 2013-08-26T00:11:22.000Z
 author: Netopya
 category: projects
-tag: PROJ
+tag: Project
 layout: post
 og_image: http://www.netopyaplanet.com/gallery_images/3/full/full_IMG_5781.JPG
 description: Here's my latest school project that I worked on with some friends, the Arduino Entertainment Multimedia Device. It's a completely portable Arduino powered LED matrix with a bunch of bells and whistles allowing it to live up to its name. Checkout my video above or continue on for more information and a gallery of shots.

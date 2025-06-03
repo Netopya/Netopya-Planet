@@ -3,7 +3,7 @@ title: Audio Virtual Reality
 date: 2014-09-01T22:51:21.000Z
 author: Netopya
 category: projects
-tag: PROJ
+tag: Project
 layout: post
 og_image: http://www.netopyaplanet.com/article_images/8/Audio%20Virtual%20Reality%20(HQ).jpg
 description: Here is a video demoing my latest project called Audio VR. Virtual Reality is quite a hot topic nowadays and many devices aim to augment the experience of content on your computer. My idea was to augment the experience of the computer itself by moving the computer into your actual reality. Audio VR works by measuring the head's position and adjusting the audio output channels of the computer accordingly to simulate the location of the computer with respect to the head. By modifying the channels in the left and right ears of your headphones, you get a similar experience to using speakers. Read on to learn more about this project.

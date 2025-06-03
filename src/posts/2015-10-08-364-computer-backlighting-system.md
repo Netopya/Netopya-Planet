@@ -3,7 +3,7 @@ title: &#36;4 Computer Backlighting System
 date: 2015-10-09T01:18:21.000Z
 author: Netopya
 category: projects
-tag: PROJ
+tag: Project
 layout: post
 og_image: http://www.netopyaplanet.com/article_images/11/full_IMG_6613.JPG
 description: An awesome computer backlighting solution for only 4 dollars!

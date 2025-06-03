@@ -1,9 +1,9 @@
 ---
 title: Introducing Chrome Memory Checker
-date: 2017-05-28T23:20:57.000Z
+date: 2017-05-28T19:43:11.000Z
 author: Netopya
 category: tools
-tag: TOOL
+tag: Tool
 layout: post
 og_image: http://www.netopyaplanet.com/article_images/screenshot4.jpg
 description: The Google Chrome web browser is a program notorious for gobbling up your computer's RAM. Chrome Memory Checker is a simple program to see exactly how much RAM Chrome is using.

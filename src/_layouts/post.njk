@@ -23,7 +23,9 @@ layout: base
                     <h1>{{ title }}</h1>
                     <p class="article-meta">
                         <small><i>By {{ author or "Netopya" }} on {{ date | dateFormat }}</i></small>
-                        {% if tag %}<span class="badge bg-secondary">{{ tag }}</span>{% endif %}
+                        {% if tag %}
+                        <span class="badge ms-2 {% if tag == 'Project' %}bg-primary{% elif tag == 'Tutorial' %}bg-success{% elif tag == 'Tool' %}bg-info{% else %}bg-secondary{% endif %}">{{ tag }}</span>
+                        {% endif %}
                     </p>
                 </header>
                 

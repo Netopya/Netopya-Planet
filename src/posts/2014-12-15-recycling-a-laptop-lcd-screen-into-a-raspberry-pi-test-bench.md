@@ -1,9 +1,9 @@
 ---
 title: Recycling a Laptop LCD Screen into a Raspberry Pi Test Bench
-date: 2014-12-16T01:38:19.000Z
+date: 2014-12-15T18:30:45.000Z
 author: Netopya
 category: tutorials
-tag: TUT
+tag: Tutorial
 layout: post
 og_image: http://www.netopyaplanet.com/gallery_images/5/full/full_IMG_6591.JPG
 description: A quick and easy guide to use a Raspberry Pi to bring a broken laptop LCD back to life!

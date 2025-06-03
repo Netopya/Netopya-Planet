@@ -1,9 +1,9 @@
 ---
-title: OPUS en ligne Review
-date: 2015-08-17T23:26:40.000Z
+title: Opus en Ligne - Review
+date: 2015-08-17T22:48:28.000Z
 author: Netopya
 category: tutorials
-tag: TUT
+tag: Tutorial
 layout: post
 og_image: http://netopyaplanet.com/gallery_images/6/full/full_IMG_6684.jpg
 description: My review of OPUS en ligne and the OPUS card reader

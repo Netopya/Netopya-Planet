@@ -1,9 +1,9 @@
 ---
-title: LED Matrices with Arduino, Netopya\'s Way
-date: 2014-01-18T03:57:38.000Z
+title: LED Matrices with Arduino - Netopya's Way
+date: 2014-01-17T22:31:10.000Z
 author: Netopya
 category: tutorials
-tag: TUT
+tag: Tutorial
 layout: post
 og_image: http://www.netopyaplanet.com/article_images/5/bytettut.jpg
 description: One of the great things I learned working on my previous project, the AEMD Alpha, was using the Arduino to control an LED matrix. The Adafruit libraries for the device took care of the multiplexing and other complexities and all that was left was controlling the individual LEDs from their x and y coordinates. But this led to the next challenge of how exactly to get images and graphics on the Arduino. First I'll describe a logic solution, but I'll show how this method falls apart. The alternative solution requires arrays of bytes (or integers) which is where my previous post introducing Bytety comes in. This little web app that I created presents a mock matrix that you can play around with to create your own graphics, and the program generates the necessary array for your Arduino code.  Continue reading on to learn my easy solution to display images on a LED matrix with an Arduino all while improving the memory footprint of your program.

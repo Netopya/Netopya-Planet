@@ -3,7 +3,7 @@ title: Controlling Multiple I2C Devices with Arduino
 date: 2014-06-23T04:15:55.000Z
 author: Netopya
 category: tutorials
-tag: TUT
+tag: Tutorial
 layout: post
 og_image: http://www.netopyaplanet.com/gallery_images/4/full/full_IMG_5841-Copy.JPG
 description: A project I was working on a while ago encountered a problem when we decided to use multiple I2C color sensors. The I2C protocol relies on the fact that each device you connect as a unique address. But in the case of the sensors we were using, the address is hard wired into the device, so connecting multiple identical sensors with the same permanent address would creating a conflict. This problem was easily solved with the use of an I2C multiplexer. Not much information was available on the web regarding this solution, but after doing some research we learned that the implementation is very easy. Read on pass the break to see what we learned and how you can use multiple identical I2C devices in your Arduino projects.

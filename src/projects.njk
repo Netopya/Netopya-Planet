@@ -30,9 +30,11 @@ permalink: /projects/
                         <div class="row">
                             <div class="col-lg-12">
                                 <h3><a href="{{ post.url }}" class="text-decoration-none">{{ post.data.title }}</a></h3>
-                                <p class="article-meta">
-                                    <small><i>By {{ post.data.author or "Netopya" }} on {{ post.data.date | dateFormat }}</i></small>
-                                    {% if post.data.tag %}<span class="badge bg-secondary">{{ post.data.tag }}</span>{% endif %}
+                                <p class="post-meta">
+                                    <small><i>{{ post.data.author or "Netopya" }} on {{ post.data.date | dateFormat }}</i></small>
+                                    {% if post.data.tag %}
+                                    <span class="badge ms-2 {% if post.data.tag == 'Project' %}bg-primary{% elif post.data.tag == 'Tutorial' %}bg-success{% elif post.data.tag == 'Tool' %}bg-info{% else %}bg-secondary{% endif %}">{{ post.data.tag }}</span>
+                                    {% endif %}
                                 </p>
                                 
                                 {% if post.data.overfold_content %}

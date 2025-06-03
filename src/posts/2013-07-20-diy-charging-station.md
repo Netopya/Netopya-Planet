@@ -1,9 +1,9 @@
 ---
 title: DIY Charging Station
-date: 2013-07-21T03:48:38.000Z
+date: 2013-07-20T22:23:23.000Z
 author: Netopya
 category: tutorials
-tag: TUT
+tag: Tutorial
 layout: post
 og_image: http://www.netopyaplanet.com/gallery_images/2/full/full_IMG_5757.JPG
 description: Read my article and join me in my journey as I make my very own charging station from simple materials found around the home.

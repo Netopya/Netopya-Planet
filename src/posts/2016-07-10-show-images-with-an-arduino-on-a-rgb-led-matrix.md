@@ -1,9 +1,9 @@
 ---
-title: Show images with an Arduino on a RGB LED Matrix
-date: 2016-07-10T22:19:58.000Z
+title: Show Images with an Arduino on a RGB LED Matrix
+date: 2016-07-10T19:27:10.000Z
 author: Netopya
 category: projects
-tag: PROJ
+tag: Project
 layout: post
 og_image: http://netopyaplanet.com/article_images/12/full_IMG_1819.JPG
 description: The Adafruit 1484 is an absolutely fantastic 32x32 LED matrix. Each one of the 1024 LEDs is an individually controllable RGB LED that allow us to display beautiful pixel art. First Robotics Competition team number 296, The Northern Knights, obtained this display to spruce up our robots. As a mentor on this team, I worked with students in order to develop a system with an Arduino to read images off a MicroSD card and display them on the LED matrix. Join us to learn the system inside out.
