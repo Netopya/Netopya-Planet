@@ -28,14 +28,6 @@
 	padding-top:15px;
 }
 
-#smalltopnavback {
-	background-image:url("../bootimages/smallnavback.jpg");
-	background-repeat:no-repeat;
-	background-size:cover;
-	height:149px;
-	background-position: center top; 
-}
-
 .blog_post h3 {
 	text-align:center;
 }
