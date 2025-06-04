@@ -38,42 +38,26 @@ overfold_content: |
     <table class="table table-bordered">
         <thead>
             <th>Function type</th>
-            <th class="success">Good</th>
-            <th class="danger">Bad</th>
+            <th class="success bg-success text-white">Good</th>
+            <th class="danger bg-danger text-white">Bad</th>
         </thead>
         <tbody>
             <tr>
                 <th scope="row">Function Declaration</th>
                 <td>
-                    <code>
-                        function nodesInEdges(a,b) {</br>
-                        //...</br>
-                        } //Good :)
-                    </code>
+                    <code>function nodesInEdges(a,b) {</br>&nbsp;&nbsp;&nbsp;&nbsp;//...</br>} //Good :)</code>
                 </td>
                 <td>
-                    <code>
-                        function LanguageText() {</br>
-                        //...</br>
-                        }; //Bad :(
-                    </code>
+                    <code>function LanguageText() {</br>&nbsp;&nbsp;&nbsp;&nbsp;//...</br>}; //Bad :(</code>
                 </td>
             </tr>
             <tr>
                 <th scope="row">Function Expression</th>
                 <td>
-                    <code>
-                        this.toJSON = function() {</br>
-                        //...</br>
-                        }? //Good :)
-                    </code>
+                    <code>this.toJSON = function() {</br>&nbsp;&nbsp;&nbsp;&nbsp;//...</br>}; //Good :)</code>
                 </td>
                 <td>
-                    <code>
-                        this.addPair = function(lang, value){</br>
-                        //...</br>
-                        } //Bad :(
-                    </code>
+                    <code>this.addPair = function(lang, value){</br>&nbsp;&nbsp;&nbsp;&nbsp;//...</br>} //Bad :(</code>
                 </td>
             </tr>
         </tbody>
@@ -87,18 +71,10 @@ overfold_content: |
         <tbody>
             <tr>
                 <td>
-                    <code>
-                        for(val in POIList){</br>
-                        // Bad :(</br>
-                        }
-                    </code>
+                    <code>for(val in POIList){</br>&nbsp;&nbsp;&nbsp;&nbsp;// Bad :(</br>}</code>
                 </td>
                 <td>
-                    <code>
-                        for(var val in POIList){</br>
-                        // Good :)</br>
-                        }
-                    </code>
+                    <code>for(var val in POIList){</br>&nbsp;&nbsp;&nbsp;&nbsp;// Good :)</br>}</code>
                 </td>
             </tr>
         </tbody>

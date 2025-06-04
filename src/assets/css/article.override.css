@@ -27,8 +27,69 @@
 	margin-right:auto;
 }
 
+/* Enhanced code block styling */
 code {
   text-align: left;
+  background-color: #f8f9fa;
+  color: #e83e8c;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.875em;
+  border: 1px solid #e9ecef;
+}
+
+/* Multi-line code blocks */
+pre {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  overflow-x: auto;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.875em;
+  line-height: 1.5;
+}
+
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #495057;
+  border-radius: 0;
+}
+
+/* Table code styling for the examples in the post */
+.table code {
+  background-color: #f1f3f4;
+  color: #d73a49;
+  font-weight: 500;
+  white-space: pre-line;
+  display: block;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #e1e4e8;
+  font-size: 0.85em;
+  line-height: 1.4;
+  margin: 0;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  tab-size: 4;
+}
+
+/* Blockquote styling for code-related quotes */
+blockquote {
+  background-color: #f8f9fa;
+  border-left: 4px solid #6c757d;
+  padding: 16px 20px;
+  margin: 20px 0;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+}
+
+blockquote p {
+  margin-bottom: 0;
+  color: #495057;
 }
   
 .well {
