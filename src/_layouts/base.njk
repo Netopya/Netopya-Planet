@@ -37,7 +37,12 @@
 <body>
     {% include "navbar.njk" %}
     
-    <main style="margin-top: 56px;">
+    {% if title != "Home" %}
+    <!-- Small nav back spacer for non-homepage pages -->
+    <div class="small-nav-spacer" style="height: 149px; background-image: url('/images/smallnavback.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; margin-top: 56px;"></div>
+    {% endif %}
+    
+    <main style="{% if title == 'Home' %}margin-top: 56px;{% endif %}">
         {{ content | safe }}
     </main>
     

@@ -1,5 +1,5 @@
 ---
-title: &#36;4 Computer Backlighting System
+title: $4 Computer Backlighting System
 date: 2015-10-09T01:18:21.000Z
 author: Netopya
 category: projects
