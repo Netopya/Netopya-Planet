@@ -8,7 +8,7 @@ layout: post
 og_image: http://www.netopyaplanet.com/article_images/11/full_IMG_6613.JPG
 description: An awesome computer backlighting solution for only 4 dollars!
 overfold_content: |
-  <div class="centered_image"><a href="/article_images/11/full_IMG_6612.JPG"><img src="/article_images/11/prev_IMG_6612.JPG" class="img-thumbnail"/></a></div>
+  <div class="text-center"><a href="/article_images/11/full_IMG_6612.JPG"><img src="/article_images/11/prev_IMG_6612.JPG" class="img-thumbnail mb-3"/></a></div>
   <p>Computer monitor backlights are cool. Solutions such as Philips Ambilight are available, but many people opt to design their own system. I wanted to see just how much you can save and what you can get by making the cheapest backlighting system possible. By salvaging parts from previous projects and getting free samples, all I need to buy where some RGB LEDs for only $4.00. Join me as I experiment and create the most basic computer ambient light solution.</p>
 ---
 

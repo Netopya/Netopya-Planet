@@ -9,7 +9,7 @@ og_image: http://www.netopyaplanet.com/gallery_images/5/full/full_IMG_6591.JPG
 description: A quick and easy guide to use a Raspberry Pi to bring a broken laptop LCD back to life!
 gallery_id: 5
 overfold_content: |
-  <div class="centered_image"><img src="/gallery_images/5/lrg/lrg_IMG_6591.JPG" class="img-thumbnail"/></div><p>This project started off when trying to find a use for a broken laptop. The screen was perfectly fine so I decided to integrate it with a Raspberry Pi. The Raspberry Pi is a fascinating computer great for small multimedia projects. I had such a project in mind, but first I wanted to test out the Pi to see what it was capable of so I create a test bench. The arrangement was fairly simple with the Raspberry Pi, a laptop LCD display, and a LCD controller to connect the two together. This setup was a great way to tryout the Pi and to recycle an old computer into a new one.</p>
+  <div class="text-center"><img src="/gallery_images/5/lrg/lrg_IMG_6591.JPG" class="img-thumbnail mb-3"/></div><p>This project started off when trying to find a use for a broken laptop. The screen was perfectly fine so I decided to integrate it with a Raspberry Pi. The Raspberry Pi is a fascinating computer great for small multimedia projects. I had such a project in mind, but first I wanted to test out the Pi to see what it was capable of so I create a test bench. The arrangement was fairly simple with the Raspberry Pi, a laptop LCD display, and a LCD controller to connect the two together. This setup was a great way to tryout the Pi and to recycle an old computer into a new one.</p>
 ---
 
 ### List of Parts

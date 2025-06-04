@@ -9,7 +9,7 @@ og_image: http://netopyaplanet.com/gallery_images/6/full/full_IMG_6684.jpg
 description: My review of OPUS en ligne and the OPUS card reader
 gallery_id: 6
 overfold_content: |
-  <div class="centered_image"><img src="/gallery_images/6/lrg/lrg_IMG_6684.jpg" class="img-thumbnail"/></div><p>The various transport agencies in Quebec have been using the OPUS card for contactless fare verification. Seven years after it was released, OPUS en ligne has now been introduced and allows the purchasing of fares online through a card reader connected to your computer. I decided to get one of these required $14.49 readers and give it a spin. Does it work? Is it a trip into the technological Stone Age or will it revolutionize the way we purchase bus passes? Join me on this journey to find out!</p>
+  <div class="text-center"><img src="/gallery_images/6/lrg/lrg_IMG_6684.jpg" class="img-thumbnail mb-3"/></div><p>The various transport agencies in Quebec have been using the OPUS card for contactless fare verification. Seven years after it was released, OPUS en ligne has now been introduced and allows the purchasing of fares online through a card reader connected to your computer. I decided to get one of these required $14.49 readers and give it a spin. Does it work? Is it a trip into the technological Stone Age or will it revolutionize the way we purchase bus passes? Join me on this journey to find out!</p>
 ---
 
 ### Hardware

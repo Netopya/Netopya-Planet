@@ -8,7 +8,7 @@ layout: post
 og_image: http://netopyaplanet.com/article_images/13/ori_Capture_sq1.png
 description: Learn from the common coding quality mistakes we made in our software engineering project as pointed out by SonarQube.
 overfold_content: |
-  <div class="centered_image"><a href="/article_images/13/ori_Capture_sq1.png"><img src="/article_images/13/thb_Capture_sq1.png" class="img-thumbnail"/></a></div>
+  <div class="text-center"><a href="/article_images/13/ori_Capture_sq1.png"><img src="/article_images/13/thb_Capture_sq1.png" class="img-thumbnail mb-3"/></a></div>
   <p>Coding conventions and code quality are practices of programming that are often ignored by many of us software developers. However when working on a school project with 6 other peers, I was responsible for setting up a program called SonarQube to analyze the quality of our code. Not only did SonarQube detect multiple quality issues with our code base, it also provided many useful suggestions to improve code readability, increase robustness against bugs, and every prevent security risks. The following blog post is based off of an e-mail that I wrote to the team explaining many common software quality issues that were arising in our code along with suggestions on how we could improve. I find that many of these tips can be applied to any JavaScript project and I am personally always taking them into account when I program web applications.</p>
 ---
 
