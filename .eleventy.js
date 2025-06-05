@@ -1,4 +1,7 @@
 module.exports = function(eleventyConfig) {
+  // Ignore the "old" folder to prevent it from being copied to the output
+  eleventyConfig.ignores.add("old/**");
+  
   // Copy static assets to match original site structure
   eleventyConfig.addPassthroughCopy("src/assets");
   
