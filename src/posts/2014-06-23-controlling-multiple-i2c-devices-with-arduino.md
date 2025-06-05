@@ -79,6 +79,6 @@ In conclusion, I hope that sharing this project with you helped you to learn how
 
 **Links:**
 - [Github repo](https://github.com/Netopya/Arduino-I2C-Multi-Color-Sensors)
-- [Arduino code](article_code/6/colorviewgood1.zip)
-- [Processing code](article_code/6/sketch_131121b_good1.zip)
+- [Arduino code](/article_code/6/colorviewgood1.zip)
+- [Processing code](/article_code/6/sketch_131121b_good1.zip)
 - [Color Sensor code library (Adafruit)](https://github.com/adafruit/Adafruit_TCS34725)

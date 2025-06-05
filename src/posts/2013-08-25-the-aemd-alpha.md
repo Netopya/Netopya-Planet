@@ -41,4 +41,4 @@ For the conceptualization of our project, we were greatly inspired by the [Chlon
 
 Lastly here is the code for our project. I've hidden it at the end as I find that it's a bit of a mess and deserves a proper explanation, which I might get to if there's a demand. Anyway enjoy:
 
-[sketch_apr25a.ino](http://www.netopyaplanet.com/article_code/sketch_apr25a.ino)
+[sketch_apr25a.ino](/article_code/sketch_apr25a.ino)

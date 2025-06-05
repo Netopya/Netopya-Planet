@@ -16,6 +16,11 @@ module.exports = function(eleventyConfig) {
     "src/assets/images/site": "images"
   });
   
+  // Map code directory from src/assets to root level for article_code compatibility
+  eleventyConfig.addPassthroughCopy({
+    "src/assets/code": "article_code"
+  });
+  
   // Map other static assets from src/assets to root level paths
   eleventyConfig.addPassthroughCopy({
     "src/assets/css": "css"

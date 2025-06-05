@@ -79,4 +79,4 @@ Working with the Adafruit 1484 LED matrix has been a great learning experience. 
 
 ## CAD
 
-[EAGLE CAD Sketch and Board files <span class="glyphicon glyphicon-download" aria-hidden="true"></span>](http://netopyaplanet.com/article_code/FRC296LEDmatrix2.zip)
+[EAGLE CAD Sketch and Board files <span class="glyphicon glyphicon-download" aria-hidden="true"></span>](/article_code/FRC296LEDmatrix2.zip)
