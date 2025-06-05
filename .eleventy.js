@@ -2,6 +2,9 @@ module.exports = function(eleventyConfig) {
   // Copy static assets to match original site structure
   eleventyConfig.addPassthroughCopy("src/assets");
   
+  // Copy bytety.html directly to maintain original URL structure
+  eleventyConfig.addPassthroughCopy("src/bytety.html");
+  
   // Map image directories from src/assets to root level paths for compatibility
   eleventyConfig.addPassthroughCopy({
     "src/assets/images/article_images": "article_images"

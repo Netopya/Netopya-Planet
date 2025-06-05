@@ -1,0 +1,226 @@
+<html>
+	<head>
+		<title>Netopya Planet - Bytety</title>
+		<LINK REL=StyleSheet HREF="css/stylesheet.css" TYPE="text/css">
+		<link rel="alternate" type="application/rss+xml" href="feed.xml" title="Netopya Planet RSS Feed">
+		
+		<script type="text/javascript">
+			var x_cols;
+			var y_rows;
+			var matrix = new Array();
+			var bytety_enabled;
+			var hover_enabled;
+			var x_over;
+			var y_over;
+			
+			function on_bytety_load()
+			{
+				x_cols=5;
+				y_rows=6;
+				bytety_enabled = 0;
+				hover_enabled = 0;
+				x_over = -1;
+				y_over = -1;
+				
+				update_x();
+				update_y();
+				
+				
+			}
+			
+			function generate_matrix()
+			{
+				var output;
+				
+				output = '<table border="1">';
+				for (var y=0;y<y_rows;y++)
+				{
+					output += "<tr>";
+					var xl = x_cols-1;
+					for (var x=xl;x>-1;x--)
+					{
+						output += '<td id="pixel_' + x +'_' + y +'" onmousedown="change_pixel(' + x + ',' + y + ')" onmouseover="over_pixel(' + x + ',' + y + ')" onmouseout="out_pixel(' + x + ',' + y + ')"></td>';
+					}
+					output += "</tr>";
+				}
+				
+				document.getElementById("matrix_output").innerHTML = output;
+			}
+			
+			function update_x()
+			{
+				x_cols = document.getElementById("x_input").value;
+				generate_matrix();
+			}
+			
+			function update_y()
+			{
+				y_rows = document.getElementById("y_input").value;
+				generate_matrix();
+			}
+			
+			function load_bytety()
+			{
+				update_x();
+				update_y();
+				
+				document.getElementById("intro_container").style.display = "none";
+				document.getElementById("matrix_area").style.opacity = "1";
+				document.getElementById("matrix_area").style.filter = "alpha(opacity=100)";
+				document.getElementById("page_title").innerHTML = x_cols + " by " + y_rows + " matrix:";
+				
+				var tds = document.getElementsByTagName("td");
+				for(var i=0;i<tds.length;i++)
+				{
+					tds[i].style.background = "grey";
+				}
+				
+				for(var i=0;i<y_rows;i++)
+				{
+					matrix[i]=0;
+				}
+				
+				bytety_enabled = 1;
+				
+				
+			}
+			
+			function change_pixel(x,y)
+			{
+				if(bytety_enabled)
+				{
+					var row = matrix[y];
+					var pixel = row & 1<<x;
+					if(pixel)
+					{
+						document.getElementById('pixel_' + x +'_' + y +'').style.background = "grey";
+						
+					}
+					else
+					{
+						document.getElementById('pixel_' + x +'_' + y +'').style.background = "red";
+					}
+					matrix[y] = matrix[y] ^ 1<<x;
+					generate_code();
+				}
+			}
+			
+			function over_pixel(x,y)
+			{
+				if(hover_enabled)
+				{
+					change_pixel(x,y);
+				}
+				else
+				{
+					x_over = x;
+					y_over = y;
+				}
+			}
+			
+			function out_pixel(x,y)
+			{
+				x_over = -1;
+				y_over = -1;
+			}
+			
+			function myKeyDown(e){
+				var keynum;
+				if(window.event){ // IE					
+					keynum = e.keyCode;
+				}else
+				if(e.which){ // Netscape/Firefox/Opera					
+					keynum = e.which;
+				} 
+				
+				//alert(keynum);
+				if(keynum = 83){
+					hover_enabled = 1;
+					
+					if(x_over > -1)
+					{
+						change_pixel(x_over,y_over);
+					}
+				}
+			}
+			
+			function myKeyUp(e){
+				var keynum;
+				if(window.event){ // IE					
+					keynum = e.keyCode;
+				}else
+				if(e.which){ // Netscape/Firefox/Opera					
+					keynum = e.which;
+				}
+				if(keynum = 83){
+					hover_enabled = 0;
+				}
+			}
+		
+			function generate_code()
+			{
+				output = "matrix[] = {";
+				output += matrix[0];
+				for (var i=1;i<matrix.length;i++)
+				{
+					output += "," + matrix[i];
+				}
+				output += "}";
+				document.getElementById("output_text_area").value = output;
+			}
+			
+			function update_zoom()
+			{
+				if(bytety_enabled)
+				{
+					var zoom = document.getElementById("zoom_input").value / 100;
+					var tds = document.getElementsByTagName("td");
+					for(var i=0;i<tds.length;i++)
+					{
+						tds[i].style.height = 50 * zoom;
+						tds[i].style.width = 50 * zoom;
+					}
+				}
+			}
+		</script>
+		<!--<script type="text/javascript" src="ga_script.js"></script>-->
+		<meta property="og:type"            content="website" /> 
+		<meta property="og:url"             content="http://www.netopyaplanet.com/bytety.html"/> 
+		<meta property="og:title"           content="Bytety" /> 
+		<meta property="og:image"           content="http://www.netopyaplanet.com/article_images/bytety_intro_img.jpg" /> 
+		<meta property="og:site_name"		content="Netopya Planet"/>
+		<meta property="og:description" 	content="Bytety! Decimal Representations of Graphical Arrays!"/>
+	</head>
+	<body style="background-color:white;" onload="on_bytety_load()" onkeydown="return myKeyDown(event)" onkeyup="return myKeyUp(event)">
+		<div id="matrix_container_main">
+			<a href="/"><p>< Return to Netopya Planet home</p></a>
+			<h1 id="page_title">Input matrix dimensions:</h1>
+			<div id="intro_container">
+				<form>
+					X: <input id="x_input" type="text" name="x" onkeyup="update_x()" value="5"></br>
+					Y: <input id="y_input" type="text" name="y" onkeyup="update_y()" value="6"></br>
+					<button type="button" onmousedown="load_bytety()">Begin!</button>
+				</form>
+			</div>
+			<div id="matrix_area"> <!--consider display none -->
+				Zoom <input id="zoom_input" type="text" name="y" onkeyup="update_zoom()" value="100">%</br>
+				<div id="matrix_output">
+					
+				
+				</div>
+				<ul>
+					Instructions:
+					<li>Click boxes to change their state</li>
+					<li>Hold down any key and boxes will change when you hover over them</li>
+					<li>Refresh page to reset</li>
+				</ul>
+				<br/>
+				<label>Output:<br/>
+					<textarea id="output_text_area" cols="100" rows="10">
+					
+					</textarea>
+				</label>
+			</div>
+		</div>
+	</body>
+</html>
